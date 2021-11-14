@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Coun
+        </title>
+        <style>
+            #main {
+                height: 500px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+            }
+            #container {
+                height: 250px;
+                width: 300px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                background-color: lightslategray;
+                box-shadow: 0 0 7px black;
+                border-radius: 1px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <div id="container">
+                <div>
+                    <h2>Click on plus icon:</h2>
+                </div>
+                <div >
+                    
+                    <button id="bt1" style=" background-color: darkgoldenrod; color: white;">+</button>
+                    <input id="input1" type="text">
+                </div>
+            </div>
+        </div>
+
+
+
+        <script>
+            var count = 0
+            var clk = document.getElementById('bt1')
+            var inputtext = document.getElementById('input1')
+            clk.addEventListener('click', fun)
+
+            function fun () {
+                count++
+                inputtext.value = count
+            }
+        </script>
+    </body>
+</html>
